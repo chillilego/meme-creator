@@ -110,7 +110,7 @@
   </head>
   <body>
     <h1>
-      Memeifier!
+      Memeifier
     </h1>
     <% if @error && ERROR_MESSAGES[@error] %>
       <h3 class="error"><%= ERROR_MESSAGES[@error] %></h3>
@@ -134,7 +134,7 @@
           <br>
           <input type="button" value="memeify!" id="submit" />
         </form>
-
+      <b>Warning: This site is in closed beta. Be warned.</b>
       <div>
         <br><br><br><br><br><br>
         <% example_url = "#{request.base_url}/hey look/a mimi/http://i.imgur.com/EDEbTth.jpg" %>
