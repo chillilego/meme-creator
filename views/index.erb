@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Memeifier - the simplest meme creator</title>
+    <title>Memeifier - the zalgoish of a spicy meme generator</title>
     <meta charset="UTF-8" content="text/html" http-equiv="Content-Type" />
     <meta content="Create meme images instantly" name="description" />
     <meta name="keywords" content="<%= AVAILABLE_MEMES.map {|k, v| v[:name] }.join(", ") %>">
@@ -110,7 +110,7 @@
   </head>
   <body>
     <h1>
-      Memeifier
+      Memeifier V1
     </h1>
     <% if @error && ERROR_MESSAGES[@error] %>
       <h3 class="error"><%= ERROR_MESSAGES[@error] %></h3>
@@ -132,9 +132,8 @@
           or
           <input autocomplete="off" id="customurl" name="url" placeholder="(an image url)" type="text" />
           <br>
-          <input type="button" value="memeify!" id="submit" />
+          <input type="button" value="Memeify!" id="submit" />
         </form>
-      <b>Warning: This site is in closed beta. Be warned.</b>
       <div>
         <br><br><br><br><br><br>
         <% example_url = "#{request.base_url}/hey look/a mimi/http://i.imgur.com/EDEbTth.jpg" %>
@@ -151,8 +150,7 @@
     </div>
 
     <div id="footer">
-      Made by: <a href="http://twitter.com/@jkupferman" target="_blank">@jkupferman</a>
-      Fork it: <a href="http://github.com/jkupferman/meme-creator" target="_blank">Github</a>
+   Version: 2.0.5
     </div>
 
     <div id="share" class="hidden">
